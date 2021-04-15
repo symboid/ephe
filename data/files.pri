@@ -1,5 +1,5 @@
 
-SWEPH_DIR=$$PWD
+SWEPH_DIR=$$PWD/files
 
 defineReplace(copySwephFile) {
     file_name = $$1

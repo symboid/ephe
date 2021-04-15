@@ -1,13 +1,11 @@
 
 TARGET = ephe-data
-BUILD_ROOT=../..
-COMPONENT_NAME=ephe
 TEMPLATE = aux
 
 OTHER_FILES += \
-    sefstars.txt
+    files/sefstars.txt
 
-swe_ephe.files = $$shell_path($$absolute_path($$_PRO_FILE_PWD_)/sefstars.txt)
-swe_ephe.files += $$shell_path($$absolute_path($$_PRO_FILE_PWD_)/*.se1)
+swe_ephe.files = $$shell_path($$absolute_path($$_PRO_FILE_PWD_)/files/sefstars.txt)
+swe_ephe.files += $$shell_path($$absolute_path($$_PRO_FILE_PWD_)/files/*.se1)
 swe_ephe.path = /assets/ephe
 INSTALLS += swe_ephe
