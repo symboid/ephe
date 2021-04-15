@@ -2,6 +2,7 @@
 TARGET = ephe-data
 BUILD_ROOT=../..
 COMPONENT_NAME=ephe
+TEMPLATE = aux
 
 OTHER_FILES += \
     sefstars.txt
